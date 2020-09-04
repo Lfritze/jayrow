@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Lfritze/jayrow/issues"
   },
-  "homepage": "https://github.com/Lfritze/jayrow#readme"
+  "homepage": "https://github.com/Lfritze/jayrow#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
