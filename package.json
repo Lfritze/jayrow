@@ -1,0 +1,19 @@
+{
+  "name": "jayrow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lfritze/jayrow.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lfritze/jayrow/issues"
+  },
+  "homepage": "https://github.com/Lfritze/jayrow#readme"
+}
