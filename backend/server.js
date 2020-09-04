@@ -8,3 +8,5 @@ app.get("/api/products", (req, res) => {
 });
 
 app.listen(5000, () => { console.log("Server started at http://localhost:5000") });
+
+// nodemon helps stop and start server when we have a change in our code
