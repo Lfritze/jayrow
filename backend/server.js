@@ -1,6 +1,7 @@
 import express from 'express';
 // import data from './data';
 // import dotenv from 'dotenv';
+import path from 'path';
 import config from './config';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
