@@ -101,3 +101,6 @@ export default App;
 
 
 // <a href="/cart/:id?">Cart</a>
+
+// https://www.udemy.com/course/build-ecommerce-website-like-amazon-react-node-mongodb/learn/lecture/17889786#questions
+// 1:30
