@@ -69,6 +69,12 @@ function App() {
           <li>
             <Link to="/category/Donruss">Donruss</Link>
           </li>
+          <li>
+            <Link to="/category/UpperDeck">Upper Deck</Link>
+          </li>
+          <li>
+            <Link to="/category/Fleer">Fleer</Link>
+          </li>
         </ul>
       </aside>
       <main className="main">

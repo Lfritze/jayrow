@@ -124,7 +124,7 @@ function ProductsScreen(props) {
             </li> 
             <li>
               <label htmlFor='category'>
-                Category
+                Category / Brand
               </label>
               <input type='text' name='category' value={category} id='category' onChange={(e) => setCategory(e.target.value)}>
               </input>

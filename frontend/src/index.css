@@ -237,7 +237,7 @@ a:hover {
   border: .1rem #808080 solid;
   border-radius: 0.5rem;
   cursor: pointer;
-  background-color: #f0c040;
+  background-color: #fa9e42;
 }
 
 .button:hover {
@@ -245,7 +245,7 @@ a:hover {
 }
 
 .button.primary {
-  background-color: #f0c040;
+  background-color: #fa9e42;
 }
 
 .button.secondary {
@@ -478,7 +478,7 @@ tbody>tr:nth-child(odd) {
   padding: 1rem;
   list-style-type: none;
   z-index: 1;
-  background-color: #203040;
+  background-color: #012c27;
   margin: 0;
   margin-top: 0.4rem;
 }
