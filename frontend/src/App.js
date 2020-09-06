@@ -60,14 +60,14 @@ function App() {
         </div>
       </header>
       <aside className="sidebar">
-        <h3>Shopping Categories</h3>
+        <h3>Card Brands</h3>
         <button className="sidebar-close-button" onClick={closeMenu}>x</button>
         <ul className="categories">
           <li>
-            <Link to="/category/topps">Topps</Link>
+            <Link to="/category/Topps">Topps</Link>
           </li>
           <li>
-            <Link to="/category/donruss">Donruss</Link>
+            <Link to="/category/Donruss">Donruss</Link>
           </li>
         </ul>
       </aside>
