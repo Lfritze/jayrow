@@ -39,7 +39,10 @@ function ProductScreen(props) {
             <h4>{product.name}</h4>
           </li>
           <li>
-            {product.rating} Stars ({product.numReviews} Reviews)
+            Condition:
+            <div>
+            {product.rating} 
+            </div>
           </li>
           <li>
             <b>${product.price}</b>

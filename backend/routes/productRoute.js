@@ -37,7 +37,7 @@ router.post('/', isAuth, isAdmin, async(req, res) => {
     countInStock: req.body.countInStock,
     description: req.body.description,
     rating: req.body.rating,
-    numReviews: req.body.numReviews
+    // numReviews: req.body.numReviews
   });
   const newProduct = await product.save();
   if(newProduct) {
@@ -56,6 +56,7 @@ router.put('/:id', isAuth, isAdmin, async (req, res) => {
     product.brand = req.body.brand;
     product.category = req.body.category;
     product.countInStock = req.body.countInStock;
+    product.rating = req.body.rating;
     product.description = req.body.description;
     // product.rating = req.body.rating;
     // product.numReviews = req.body.numReviews;

@@ -13,6 +13,7 @@ function ProductsScreen(props) {
   const [category, setCategory] = useState('');
   const [countInStock, setCountInStock] = useState('');
   const [description, setDescription] = useState('');
+  const [rating, setRating] = useState('');
 
   const productList = useSelector((state) => state.productList);
 
@@ -46,6 +47,7 @@ function ProductsScreen(props) {
     setBrand(product.brand);
     setCategory(product.category);
     setCountInStock(product.countInStock);
+    setRating(product.rating);
   }
 
   const submitHandler = (e) => {
@@ -57,7 +59,8 @@ function ProductsScreen(props) {
       image, 
       brand, 
       category, 
-      countInStock, 
+      countInStock,
+      rating, 
       description 
     })
     );
@@ -131,6 +134,13 @@ function ProductsScreen(props) {
                 Description
               </label>
               <textarea name='description' value={description} id='name' onChange={(e) => setDescription(e.target.value)}>
+              </textarea>
+            </li>
+            <li>
+              <label htmlFor='rating'>
+                Condition
+              </label>
+              <textarea name='rating' value={rating} id='name' onChange={(e) => setRating(e.target.value)}>
               </textarea>
             </li> 
             <li>

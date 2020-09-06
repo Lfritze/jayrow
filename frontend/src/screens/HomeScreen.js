@@ -72,7 +72,7 @@ function HomeScreen(props) {
                   ${product.price}
                 </div>
                 <div className="product-rating">
-                  {product.rating} Stars ({product.numReviews})
+                   Condition: {product.rating}
                 </div>
               </div>  
             </li> )
