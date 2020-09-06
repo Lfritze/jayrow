@@ -122,6 +122,11 @@ a:hover {
   color: #808080;
 }
 
+.product-rating {
+  font-size: 1.2rem;
+  color: #808080;
+}
+
 .product-price {
   font-size: 2rem;
   font-weight: bold;
