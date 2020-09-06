@@ -64,10 +64,10 @@ function App() {
         <button className="sidebar-close-button" onClick={closeMenu}>x</button>
         <ul className="categories">
           <li>
-            <Link to="/category/Topps">Topps</Link>
+            <Link to="/category/topps">Topps</Link>
           </li>
           <li>
-            <Link to="/category/Donruss">Donruss</Link>
+            <Link to="/category/donruss">Donruss</Link>
           </li>
         </ul>
       </aside>
@@ -90,7 +90,7 @@ function App() {
         </div>
       </main>
       <footer className="footer">
-        All rights reserved
+        Fritze Cards - All rights reserved
       </footer>
     </div>
     </BrowserRouter>
