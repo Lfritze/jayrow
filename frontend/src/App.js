@@ -35,7 +35,7 @@ function App() {
       <header className="header">
         <div className="brand">
           <button onClick={openMenu}>
-            &#9918;
+            &#9776;
           </button>
           <Link to="/">Fritze Cards</Link>
         </div>

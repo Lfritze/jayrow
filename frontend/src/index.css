@@ -7,7 +7,7 @@ body {
   font: 1.6rem Helvetica;
   height: 100vh;
   margin: 0;
-  background-color: #e6e6e6;
+  background-color: #f5eeee;
   /* background-color: #efefef; */
   /* background-image: url("resources/Grass.JPG"); */
 }
@@ -153,7 +153,7 @@ a:hover {
   transition: all .5se;
   transform: translateX(-30rem);
   width: 30rem;
-  background-color: #e78b4e;
+  background-color: rgb(230, 233, 230);
   height: 100%;
 }
 
