@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { createOrder, detailsOrder, payOrder } from '../actions/orderActions';
+import { detailsOrder, payOrder } from '../actions/orderActions';
 import PaypalButton from '../components/PaypalButton';
 function OrderScreen(props) {
 
@@ -91,8 +91,6 @@ function OrderScreen(props) {
               }
             </ul>
           </div>
-
-
         </div>
         <div className="placeorder-action">
           <ul>
@@ -124,14 +122,9 @@ function OrderScreen(props) {
               <div>${order.totalPrice}</div>
             </li>
           </ul>
-
-
-
         </div>
-
       </div>
     </div>
-
 }
 
 export default OrderScreen;

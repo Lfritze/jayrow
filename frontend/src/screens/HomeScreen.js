@@ -22,10 +22,10 @@ function HomeScreen(props) {
     e.preventDefault();
     dispatch(listProducts(category, searchKeyword, sortOrder));
   };
-  const sortHandler = (e) => {
-    setSortOrder(e.target.value);
-    dispatch(listProducts(category, searchKeyword, sortOrder));
-  };
+  // const sortHandler = (e) => {
+  //   setSortOrder(e.target.value);
+  //   dispatch(listProducts(category, searchKeyword, sortOrder));
+  // };
  
   return (
     <>
@@ -38,17 +38,17 @@ function HomeScreen(props) {
               name="searchKeyword"
               onChange={(e) => setSearchKeyword(e.target.value)}
             />
-            <button type="submit">Search</button>
+            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
           </form>
         </li>
-        <li>
+        {/* <li>
           Sort By{' '}
           <select name="sortOrder" onChange={sortHandler}>
             <option value="">Newest</option>
             <option value="lowest">Lowest</option>
             <option value="highest">Highest</option>
           </select>
-        </li>
+        </li> */}
       </ul>
       {loading ? (
         <div>Loading...</div>

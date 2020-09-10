@@ -494,8 +494,10 @@ tbody>tr:nth-child(odd) {
   list-style-type: none;
   padding: 0;
   margin: 1rem auto;
-  max-width: 45rem;
-  justify-content: space-between;
+  max-width: 30rem;
+  /* border: 1px solid black; */
+  
+  /* justify-content: space-between; */
 }
 
 .filter input {
@@ -504,11 +506,17 @@ tbody>tr:nth-child(odd) {
 
 .filter button {
   height: 3rem;
+  margin-left: 0.3rem;
 }
 
-.filter select {
-  height: 3rem;
+.filter button:hover {
+  background-color: #fa9e42;
+  cursor: pointer;
 }
+
+/* .filter select {
+  height: 3rem;
+} */
 
 .filter input,
 .filter button,
