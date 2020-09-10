@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { listProducts } from '../actions/productActions';
+import LazyLoad from 'react-lazy-load';
  
 function HomeScreen(props) {
   const [searchKeyword, setSearchKeyword] = useState('');
@@ -60,11 +61,13 @@ function HomeScreen(props) {
             <li key={product._id}>
               <div className="product">
                 <Link to={'/product/' + product._id}>
+                  <LazyLoad>
                   <img
                     className="product-image"
                     src={product.image}
                     alt="product"
                   />
+                  </LazyLoad>
                 </Link>
                 <div className="product-name">
                   <Link to={'/product/' + product._id}>{product.name}</Link>
