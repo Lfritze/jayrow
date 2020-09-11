@@ -12,8 +12,6 @@ import PaymentScreen from './screens/PaymentScreen';
 import PlaceOrderScreen from './screens/PlaceOrderScreen';
 import OrderScreen from './screens/OrderScreen';
 import OrdersScreen from './screens/OrdersScreen';
-import data from './data';
-
 import ProfileScreen from './screens/ProfileScreen';
 import './App.css';
 
@@ -60,10 +58,10 @@ function App() {
         </div>
       </header>
       <aside className="sidebar">
-        <h3>Card Brands</h3>
-        <button className="sidebar-close-button" onClick={closeMenu}>x</button>
+        <h3>Manufacturers</h3>
+        <button className="sidebar-close-button" onClick={closeMenu}><i className="fas fa-times-circle"></i></button>
         <ul className="categories">
-          <li>
+          <li className="topps-logo">
             <Link to="/category/Topps">Topps</Link>
           </li>
           <li>

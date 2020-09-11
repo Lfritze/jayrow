@@ -161,9 +161,12 @@ a:hover {
   position: fixed;
   transition: all .5se;
   transform: translateX(-30rem);
-  width: 30rem;
-  background-color: rgb(230, 233, 230);
+  width: 20rem;
+  background-color: #508fc7;
   height: 100%;
+  color: rgb(0, 0, 0);
+  padding-left: 0.5rem;
+  
 }
 
 .sidebar.open {
@@ -171,12 +174,15 @@ a:hover {
 }
 
 .sidebar-close-button {
-  border-radius: 50%;
-  border: .1rem #000000 solid;
-  width: 3rem;
-  height: 3rem;
-  padding: .5rem;
-  font-size: 2rem;
+  /* border-radius: 50%; */
+  /* border: .1rem #000000 solid; */
+  border: none;
+  color: white;
+  width: 4rem;
+  height: 4rem;
+  /* padding: .5rem; */
+  background-color: #508fc7;
+  font-size: 2.5rem;
   padding-top: 0;
   cursor: pointer;
   position: absolute;
@@ -498,7 +504,7 @@ tbody>tr:nth-child(odd) {
   list-style-type: none;
   padding: 0;
   margin: 1.5rem auto;
-  max-width: 30rem;
+  max-width: 33rem;
   /* border: 1px solid black; */
   justify-content: space-between;
 }
@@ -538,13 +544,23 @@ tbody>tr:nth-child(odd) {
 .categories {
   padding: 0;
   list-style-type: none;
+  color: #fff;
+  
 }
+
+
 
 .categories a{
   display: flex;
   padding: 1rem;
+  color: #000;
+  
 }
 
 .categories a:hover{
-  background-color: #c0c0c0;
+  background-color: #011f3a;
+  color: #fa9e42;
+}
+.topps-log {
+  max-width: 1%;
 }
