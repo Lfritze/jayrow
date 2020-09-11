@@ -36,12 +36,13 @@ function HomeScreen(props) {
         <li>
           <form onSubmit={submitHandler}>
             <input
-              name="searchKeyword"
+              name="searchKeyword" placeholder="search"
               onChange={(e) => setSearchKeyword(e.target.value)}
             />
             <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
           </form>
         </li>
+        
         {/* <li>
           Sort By{' '}
           <select name="sortOrder" onChange={sortHandler}>
@@ -50,6 +51,7 @@ function HomeScreen(props) {
             <option value="highest">Highest</option>
           </select>
         </li> */}
+
       </ul>
       {loading ? (
         <div>Loading...</div>
@@ -76,6 +78,7 @@ function HomeScreen(props) {
                 <div className="product-price">${product.price}</div>
                 <div className="product-rating">
                   Condition: {product.rating}
+                  
  
                 </div>
               </div>
