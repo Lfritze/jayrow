@@ -46,11 +46,9 @@ function HomeScreen(props) {
             />
             <button type="submit"><i className="fa fa-search" aria-hidden="true"></i></button>
             <button type="submit" onClick={refresher}> <i className="fas fa-redo" alt='refresh'></i></button>
-            
-            
-            
+
           </form>
-          
+
         </li>
         
         <li>
@@ -82,9 +80,12 @@ function HomeScreen(props) {
                   </LazyLoad>
                 </Link>
                 <div className="product-name">
-                  <Link to={'/product/' + product._id}>{product.name}</Link>
+                  <Link to={'/product/' + product._id}>{product.name}
+                  </Link>
                 </div>
-                <div className="product-brand">{product.brand}</div>
+                <div className="product-brand">{product.brand}
+                
+                </div>
                 <div className="product-price">${product.price}</div>
                 <div className="product-rating">
                   Condition: {product.rating}
