@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { saveProduct, listProducts, deleteProduct } from '../actions/productActions';
@@ -14,6 +15,7 @@ function ProductsScreen(props) {
   const [countInStock, setCountInStock] = useState('');
   const [description, setDescription] = useState('');
   const [rating, setRating] = useState('');
+  const [uploading, setUploading] = useState(false);
 
   const productList = useSelector((state) => state.productList);
 
@@ -70,6 +72,27 @@ function ProductsScreen(props) {
     dispatch(deleteProduct(product._id))
   }
 
+  const uploadFileHandler = (e) => {
+    const file = e.target.files[0];
+    const bodyFormData = new FormData();
+    bodyFormData.append('image', file);
+    setUploading(true);
+    axios
+      .post('/api/uploads', bodyFormData, {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+        },
+      })
+      .then((response) => {
+        setImage(response.data);
+        setUploading(false);
+      })
+      .catch((err) => {
+        console.log(err);
+        setUploading(false);
+      });
+  };
+
   return (    
     <div className='content content-margined'>
       <div className='product-header'>
@@ -102,12 +125,17 @@ function ProductsScreen(props) {
               </input>
             </li> 
             <li>
-              <label htmlFor='image'>
-                Image
-              </label>
-              <input type='text' name='image' value={image} id='image' onChange={(e) => setImage(e.target.value)}>
-              </input>
-            </li> 
+                <label htmlFor="image">Image</label>
+                <input
+                  type="text"
+                  name="image"
+                  value={image}
+                  id="image"
+                  onChange={(e) => setImage(e.target.value)}
+                ></input>
+                <input type="file" onChange={uploadFileHandler}></input>
+                {uploading && <div>Uploading...</div>}
+              </li> 
             <li>
               <label htmlFor='brand'>
                 Brand
