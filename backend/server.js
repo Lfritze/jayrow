@@ -23,7 +23,6 @@ mongoose.connect(mongodbUrl, {
 const app = express();
 app.use(bodyParser.json());
 app.use('/api/uploads', uploadRoute);
-app.use('/uploads', express.static(path.join(__dirname, '/../uploads')))
 app.use("/api/users", userRoute);
 app.use("/api/products", productRoute);
 app.use("/api/orders", orderRoute);
@@ -43,6 +42,8 @@ app.get("/api/config/paypal", (req, res) => {
 // app.get("/api/products", (req, res) => {
 //   res.send(data.products);
 // });
+
+app.use('/uploads', express.static(path.join(__dirname, '/../uploads')));
 
 app.use(express.static(path.join(__dirname, '/../frontend/build')));
 app.get('*', (req, res) => {
